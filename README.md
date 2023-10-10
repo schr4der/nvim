@@ -1,15 +1,13 @@
-# Slydragonn's dotfiles
+# Nullsurface's Neovim Config
 
 ![neovim setuo](./images/neovim.png)
 
 ## Configs
 
 - Neovim
-- Powershell
 
 ## 📚 Articles
 
-- [How to Set up the Windows terminal with Powershell and Oh My Posh](https://dev.to/slydragonn/how-to-set-up-the-windows-terminal-with-powershell-and-oh-my-posh-2ba4)
 - [How to Set up Neovim for Windows and Linux with Lua and Packer](https://dev.to/slydragonn/how-to-set-up-neovim-for-windows-and-linux-with-lua-and-packer-2391)
 
 ## ⚙ Requirements
@@ -23,8 +21,6 @@
   - A C compiler in your path and libstdc++ installed: [Windows support](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)
   - [Git](https://git-scm.com/downloads)
 
-- **Powershell**:
-  - [Oh My Posh](https://ohmyposh.dev/docs/installation/windows)
 
 ## Neovim setup
 
@@ -32,7 +28,7 @@
 
 ```
 📂 ~/.config/nvim
-├── 📂 lua/📂 slydragonn/
+├── 📂 lua/📂 nullsurface/
 │	 └── 📂 configs/
 │        └── 🌑 plugins.lua
 │	 └── 🌑 settings.lua
@@ -72,12 +68,10 @@
 Clone the repository.
 
 ```bash
-git clone https://github.com/slydragonn/dotfiles.git
+git clone https://github.com/nullsurface/nvim.git
 ```
 
-Move nvim directory from `/dotfiles/.config/` to
-
-- **Windows**: `$env:LOCALAPPDATA\nvim\`
+Move nvim directory to
 
 - **Linux**: `~/.config/nvim`
 

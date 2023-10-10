@@ -16,14 +16,14 @@ return require("packer").startup(function(use)
 	use("nvim-tree/nvim-web-devicons")
 
 	-- Colorschema
-	use("rebelot/kanagawa.nvim")
+	use("ellisonleao/gruvbox.nvim")
 
 	-- Statusline
 	use({
 		"nvim-lualine/lualine.nvim",
 		event = "BufEnter",
 		config = function()
-			require("slydragonn.configs.lualine")
+			require("nullsurface.configs.lualine")
 		end,
 		requires = { "nvim-web-devicons" },
 	})
@@ -35,7 +35,7 @@ return require("packer").startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 		config = function()
-			require("slydragonn.configs.treesitter")
+			require("nullsurface.configs.treesitter")
 		end,
 	})
 
@@ -52,7 +52,7 @@ return require("packer").startup(function(use)
 	use({
 		"neovim/nvim-lspconfig",
 		config = function()
-			require("slydragonn.configs.lsp")
+			require("nullsurface.configs.lsp")
 		end,
 	})
 
@@ -68,7 +68,7 @@ return require("packer").startup(function(use)
 		"hrsh7th/nvim-cmp",
 		event = "InsertEnter",
 		config = function()
-			require("slydragonn.configs.cmp")
+			require("nullsurface.configs.cmp")
 		end,
 	})
 
@@ -82,7 +82,7 @@ return require("packer").startup(function(use)
 	use({
 		"jose-elias-alvarez/null-ls.nvim",
 		config = function()
-			require("slydragonn.configs.null-ls")
+			require("nullsurface.configs.null-ls")
 		end,
 		requires = { "nvim-lua/plenary.nvim" },
 	})
@@ -98,7 +98,7 @@ return require("packer").startup(function(use)
 	use({
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
-			require("slydragonn.configs.mason-lsp")
+			require("nullsurface.configs.mason-lsp")
 		end,
 		after = "mason.nvim",
 	})
@@ -127,7 +127,7 @@ return require("packer").startup(function(use)
 		"akinsho/toggleterm.nvim",
 		tag = "*",
 		config = function()
-			require("slydragonn.configs.toggleterm")
+			require("nullsurface.configs.toggleterm")
 		end,
 	})
 
@@ -135,7 +135,7 @@ return require("packer").startup(function(use)
 	use({
 		"lewis6991/gitsigns.nvim",
 		config = function()
-			require("slydragonn.configs.gitsigns")
+			require("nullsurface.configs.gitsigns")
 		end,
 	})
 
@@ -151,7 +151,7 @@ return require("packer").startup(function(use)
 	use({
 		"windwp/nvim-autopairs",
 		config = function()
-			require("slydragonn.configs.autopairs")
+			require("nullsurface.configs.autopairs")
 		end,
 	})
 
@@ -159,7 +159,7 @@ return require("packer").startup(function(use)
 	use({
 		"xiyaowong/nvim-transparent",
 		config = function()
-			require("slydragonn.configs.transparent")
+			require("nullsurface.configs.transparent")
     end, 
   })
 end)
