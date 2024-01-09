@@ -75,6 +75,11 @@ Move nvim directory to
 
 - **Linux**: `~/.config/nvim`
 
+Run requirements installation script:
+```bash
+./install.sh
+```
+
 and run the command:
 
 ```bash
