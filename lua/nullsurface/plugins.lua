@@ -44,7 +44,7 @@ return require("packer").startup(function(use)
 	-- Telescope
 	use({
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.1",
+		tag = "0.1.5",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
@@ -138,6 +138,15 @@ return require("packer").startup(function(use)
 			require("nullsurface.configs.gitsigns")
 		end,
 	})
+
+  -- LazyGit
+  use({
+      "kdheepak/lazygit.nvim",
+      -- optional for floating window border decoration
+      requires = {
+          "nvim-lua/plenary.nvim",
+      },
+  })
 
 	-- Markdown Preview
 	use({

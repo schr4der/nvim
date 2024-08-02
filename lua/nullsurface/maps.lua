@@ -41,6 +41,7 @@ map("n", "<S-TAB>", "<CMD>bprevious<CR>")
 -- Terminal
 map("n", "<leader>th", "<CMD>ToggleTerm size=10 direction=horizontal<CR>")
 map("n", "<leader>tv", "<CMD>ToggleTerm size=80 direction=vertical<CR>")
+map("n", "<leader>tf", "<CMD>ToggleTerm float<CR>")
 
 -- Markdown Preview
 map("n", "<leader>m", "<CMD>MarkdownPreview<CR>")
@@ -57,3 +58,6 @@ map("n", "<C-Left>", "<C-w><")
 map("n", "<C-Right>", "<C-w>>")
 map("n", "<C-Up>", "<C-w>+")
 map("n", "<C-Down>", "<C-w>-")
+
+-- LazyGit
+map("n", "<leader>g", "<CMD>LazyGit<CR>")
