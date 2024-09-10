@@ -61,3 +61,10 @@ map("n", "<C-Down>", "<C-w>-")
 
 -- LazyGit
 map("n", "<leader>g", "<CMD>LazyGit<CR>")
+
+-- For nvimdiff
+if vim.wo.diff then
+  map("n", "<leader>1", ":diffget LOCAL<CR>")
+  map("n", "<leader>2", ":diffget BASE<CR>")
+  map("n", "<leader>3", ":diffget REMOTE<CR>")
+end
