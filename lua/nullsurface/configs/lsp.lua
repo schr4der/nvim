@@ -67,3 +67,9 @@ nvim_lsp.clangd.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+
+-- GoLang
+nvim_lsp.gopls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
