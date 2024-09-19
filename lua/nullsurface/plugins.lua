@@ -171,4 +171,12 @@ return require("packer").startup(function(use)
 			require("nullsurface.configs.transparent")
     end, 
   })
+
+-- Co-Pilot
+	use({
+		"github/copilot.vim",
+		config = function()
+			require("nullsurface.configs.transparent")
+    end, 
+  })
 end)
