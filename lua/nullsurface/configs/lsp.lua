@@ -73,3 +73,9 @@ nvim_lsp.gopls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+
+-- Terraform
+nvim_lsp.terraformls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})

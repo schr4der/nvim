@@ -15,5 +15,6 @@ masonlsp.setup({
 		"pyright",
 		"tailwindcss",
     "gopls",
+    "terraformls"
 	},
 })
