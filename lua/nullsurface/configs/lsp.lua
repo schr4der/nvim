@@ -21,7 +21,7 @@ end
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- TypeScript
-nvim_lsp.tsserver.setup({
+nvim_lsp.ts_ls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
@@ -66,4 +66,16 @@ nvim_lsp.pyright.setup({
 nvim_lsp.clangd.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
+})
+
+-- GoLang
+nvim_lsp.gopls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+-- Terraform
+nvim_lsp.terraformls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
 })

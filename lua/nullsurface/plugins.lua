@@ -44,7 +44,7 @@ return require("packer").startup(function(use)
 	-- Telescope
 	use({
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.1",
+		tag = "0.1.5",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
@@ -139,6 +139,15 @@ return require("packer").startup(function(use)
 		end,
 	})
 
+  -- LazyGit
+  use({
+      "kdheepak/lazygit.nvim",
+      -- optional for floating window border decoration
+      requires = {
+          "nvim-lua/plenary.nvim",
+      },
+  })
+
 	-- Markdown Preview
 	use({
 		"iamcco/markdown-preview.nvim",
@@ -158,6 +167,14 @@ return require("packer").startup(function(use)
 	-- Background Transparent
 	use({
 		"xiyaowong/nvim-transparent",
+		config = function()
+			require("nullsurface.configs.transparent")
+    end, 
+  })
+
+-- Co-Pilot
+	use({
+		"github/copilot.vim",
 		config = function()
 			require("nullsurface.configs.transparent")
     end, 
