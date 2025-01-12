@@ -139,14 +139,14 @@ return require("packer").startup(function(use)
 		end,
 	})
 
-  -- LazyGit
-  use({
-      "kdheepak/lazygit.nvim",
-      -- optional for floating window border decoration
-      requires = {
-          "nvim-lua/plenary.nvim",
-      },
-  })
+	-- LazyGit
+	use({
+		"kdheepak/lazygit.nvim",
+		-- optional for floating window border decoration
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
 
 	-- Markdown Preview
 	use({
@@ -169,6 +169,11 @@ return require("packer").startup(function(use)
 		"xiyaowong/nvim-transparent",
 		config = function()
 			require("nullsurface.configs.transparent")
-    end, 
-  })
+		end,
+	})
+
+	-- VimTex
+	use({
+		"lervag/vimtex",
+	})
 end)
