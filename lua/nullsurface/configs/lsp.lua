@@ -73,3 +73,9 @@ nvim_lsp.gopls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+
+-- Latex
+nvim_lsp.ltex.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})

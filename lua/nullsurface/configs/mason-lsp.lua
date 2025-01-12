@@ -14,6 +14,7 @@ masonlsp.setup({
 		"ts_ls",
 		"pyright",
 		"tailwindcss",
-    "gopls",
+		"gopls",
+		"ltex",
 	},
 })
