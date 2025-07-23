@@ -31,7 +31,7 @@ map("n", "<leader>ñ", "<CMD>vsplit<CR>")
 map("n", "<leader>p", "<CMD>split<CR>")
 
 -- NeoTree
-map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
+map("n", "<leader>e", "<CMD>Neotree float toggle<CR>")
 map("n", "<leader>o", "<CMD>Neotree focus<CR>")
 
 -- Buffer
