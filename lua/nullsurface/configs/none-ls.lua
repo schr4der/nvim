@@ -1,4 +1,4 @@
-local status, nls = pcall(require, "null-ls")
+local status, nls = pcall(require, "none-ls")
 
 if not status then
 	return

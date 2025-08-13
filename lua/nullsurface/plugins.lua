@@ -80,9 +80,9 @@ return require("packer").startup(function(use)
 
 	-- LSP diagnostics, code actions, and more via Lua.
 	use({
-		"jose-elias-alvarez/null-ls.nvim",
+		"nvimtools/none-ls.nvim",
 		config = function()
-			require("nullsurface.configs.null-ls")
+			require("nullsurface.configs.none-ls")
 		end,
 		requires = { "nvim-lua/plenary.nvim" },
 	})
