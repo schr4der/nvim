@@ -1,4 +1,4 @@
-local status, nvim_lsp = pcall(require, "lspconfig")
+local status, nvim_lsp = pcall(require, "vim.lsp.config")
 if not status then
 	return
 end
