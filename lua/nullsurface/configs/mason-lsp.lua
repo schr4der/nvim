@@ -16,5 +16,6 @@ masonlsp.setup({
 		"tailwindcss",
 		"gopls",
 		"ltex",
+    "clangd"
 	},
 })
